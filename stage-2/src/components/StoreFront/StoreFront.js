@@ -3,8 +3,8 @@ import axios from 'axios';
 import './StoreFront.css';
 
 class StoreFront extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             products: []
@@ -21,6 +21,7 @@ class StoreFront extends Component {
     }
 
     render() {
+        // debugger;
         let productDisplay = this.state.products.map((element, index) => {
             return (
                 <div className="product-container" key={index}>

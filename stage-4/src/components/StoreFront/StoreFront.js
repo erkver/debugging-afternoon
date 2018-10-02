@@ -10,6 +10,7 @@ class StoreFront extends Component {
     }
 
     render() {
+        // debugger;
         console.log(this.props.products);
         let productDisplay = this.props.products.map((element, index) => {
             return (
